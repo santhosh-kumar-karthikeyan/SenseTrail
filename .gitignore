@@ -1,0 +1,157 @@
+# ============================================
+# SenseTrail Project - Root .gitignore
+# ============================================
+
+# Markdown files (except README.md)
+*.md
+!README.md
+
+# ============================================
+# Flutter/Dart - Mobile App
+# ============================================
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio build artifacts
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/android/.gradle/
+app/android/local.properties
+app/android/captures/
+app/android/gradle/
+app/android/gradlew
+app/android/gradlew.bat
+
+# iOS build artifacts
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Flutter/.last_build_id
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/App.framework
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+app/ios/Runner.xcworkspace/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Web build
+app/web/
+
+# Windows build
+app/windows/flutter/
+
+# Linux build
+app/linux/flutter/
+
+# macOS build
+app/macos/Flutter/
+
+# ============================================
+# ESP32 Firmware - Arduino/PlatformIO
+# ============================================
+
+# PlatformIO
+firmware/.pio/
+firmware/.vscode/
+
+# Arduino build files
+firmware/build/
+firmware/*.hex
+firmware/*.bin
+firmware/*.elf
+
+# ============================================
+# Signing & Security
+# ============================================
+
+# Android signing keys - NEVER COMMIT THESE!
+*.jks
+*.keystore
+app/android/key.properties
+app/android/app/google-services.json
+
+# iOS signing
+*.mobileprovision
+*.p12
+
+# ============================================
+# OS & IDE
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ============================================
+# Temporary & Cache
+# ============================================
+
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+
+# ============================================
+# APK & Build Outputs (optional - uncomment if you don't want to track)
+# ============================================
+
+app/build/app/outputs/flutter-apk/*.apk
+app/build/app/outputs/bundle/release/*.aab
